@@ -36,7 +36,7 @@
 #include <linux/netlink.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <cutils/log.h>
+#include <log/log.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <errno.h>

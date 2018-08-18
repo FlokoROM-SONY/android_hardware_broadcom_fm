@@ -43,7 +43,7 @@
 #include "jni.h"
 #include "JNIHelp.h"
 #include "android_fmradio_Receiver.h"
-#include <utils/Log.h>
+#include <log/log.h>
 
 
 /* *INDENT-OFF* */

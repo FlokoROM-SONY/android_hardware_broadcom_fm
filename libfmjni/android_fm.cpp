@@ -36,11 +36,11 @@
 
 #include "jni.h"
 
-#include <utils/Log.h>
+#include <log/log.h>
 #include "android_fmradio_Receiver.h"
 
 #ifndef LIBRARY_PATH
-#define LIBRARY_PATH "/system/lib64/"
+#define LIBRARY_PATH "/vendor/lib64/"
 #endif
 
 #ifndef LIBRARY_PREFIX

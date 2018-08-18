@@ -55,9 +55,9 @@
 #include "brcm_hci_dump.h"
 #include "v4l2_cfg.h"
 #ifdef ANDROID
-#include <private/android_filesystem_config.h>
+#include <cutils/android_filesystem_config.h>
 #include <cutils/properties.h>
-#include <cutils/log.h>
+#include <log/log.h>
 #include <cutils/misc.h>
 #endif
 
@@ -87,7 +87,7 @@
 #define PERSIST_BDADDR_PROPERTY         "persist.service.bdroid.bdaddr"
 #define STACK_CONF_FILE "/etc/bluetooth/bt_stack.conf"
 #define FW_PATCH_FILENAME_MAXLEN 80
-#define fw_patchfile_path "/system/etc/firmware"
+#define fw_patchfile_path "/vendor/etc/firmware"
 #define FW_PATCHFILE_EXTENSION      ".hcd"
 #define FW_PATCHFILE_EXTENSION_LEN  4
 #define HCI_EVT_CMD_CMPL_LOCAL_NAME_STRING 7
@@ -110,7 +110,7 @@ bdaddr_t bd_addr;
 /* parameters read from bt_vendor.conf */
 static char hw_cfg_string[CFG_PARAM_STRING_SIZE] = {0}; /* pass as parameter to ldisc */
 static unsigned long cust_baud_rate = 3000000;
-static char driver_module_path[MAX_KMODULE_PATH_SIZE] = "/system/lib/modules/";
+static char driver_module_path[MAX_KMODULE_PATH_SIZE] = "/vendor/lib/modules/";
 static char uart_port_name[UART_PORT_NAME_SIZE] = "/dev/ttyHS0";
 int lpmenable;
 int hci_snoop_enable = 0;

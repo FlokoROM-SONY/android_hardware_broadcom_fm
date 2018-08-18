@@ -21,7 +21,7 @@ LOCAL_SRC_FILES := android_fm.cpp \
                    android_fmradio_Receiver.cpp
 
 ifneq ($(strip $(TARGET_ARCH)),arm64)
-LIBRARY_PATH:="/system/lib/"
+LIBRARY_PATH:="/vendor/lib/"
 LOCAL_CFLAGS:= -DLIBRARY_PATH=\"$(LIBRARY_PATH)\"
 endif
 

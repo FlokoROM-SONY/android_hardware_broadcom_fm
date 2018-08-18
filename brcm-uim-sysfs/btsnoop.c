@@ -54,7 +54,7 @@
 #include <fcntl.h>
 
 #define LOG_TAG "BTSNOOP-DISP-V4L2"
-#include <cutils/log.h>
+#include <log/log.h>
 
 #include "utils.h"
 #include "btsnoop.h"
