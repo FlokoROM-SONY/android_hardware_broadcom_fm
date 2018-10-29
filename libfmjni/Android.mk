@@ -27,5 +27,8 @@ endif
 
 LOCAL_REQUIRED_MODULES := libfmradio.v4l2-fm brcm-uim-sysfs
 LOCAL_SHARED_LIBRARIES += liblog libnativehelper
+LOCAL_CFLAGS += -Wno-unused-variable \
+                -Wno-unused-function \
+                -Wno-unused-label
 
 include $(BUILD_SHARED_LIBRARY)
