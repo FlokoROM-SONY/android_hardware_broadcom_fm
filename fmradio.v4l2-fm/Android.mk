@@ -12,5 +12,6 @@ ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) >= 25 ))" )))
 LOCAL_MODULE_OWNER := sony
 LOCAL_PROPRIETARY_MODULE := true
 endif
+LOCAL_CFLAGS += -Wno-unused-variable
 
 include $(BUILD_SHARED_LIBRARY)
