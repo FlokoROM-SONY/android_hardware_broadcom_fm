@@ -154,7 +154,7 @@ typedef struct {
 #define V4L2_STATUS_OFF '0'  // No procol drivers registered
 
 /* File used for hardware config. Read udev_name, baudrate and module path from this file */
-#define VENDOR_LIB_CONF_FILE "/etc/bluetooth/bt_vendor.conf"
+#define VENDOR_LIB_CONF_FILE "/vendor/etc/bluetooth/bt_vendor.conf"
 
 
 /* HCI response opcodes */
