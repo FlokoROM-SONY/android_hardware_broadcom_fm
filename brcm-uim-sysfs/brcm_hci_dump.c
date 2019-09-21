@@ -42,6 +42,7 @@
 #include <errno.h>
 #include <malloc.h>
 #include <string.h>
+#include <pthread.h>
 #include "utils.h"
 #include "btsnoop.h"
 #include "brcm_hci_dump.h"

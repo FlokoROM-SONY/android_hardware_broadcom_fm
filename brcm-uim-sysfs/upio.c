@@ -35,6 +35,7 @@
 #include <errno.h>
 #include <malloc.h>
 #include <string.h>
+#include <unistd.h>
 #include <cutils/properties.h>
 
 #define UPIO_BT_POWER_OFF 0
